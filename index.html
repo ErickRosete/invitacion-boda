@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jessica y Erick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAV-STYLE -->
+    <header class="site-header">
+      <h1>Jessica y Erick</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO / COVER SECTION -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h2 class="hero-text dark-bg">Nuestra Boda</h2>
+          <h2 class="hero-text dark-bg prata">3 de Mayo, 2025</h2>
+        </div>
+        <!-- A down arrow button to scroll -->
+        <button
+          class="down-button"
+          onclick="document.getElementById('ceremonia').scrollIntoView({behavior: 'smooth'})"
+          aria-label="Desplazar la página hacia abajo"
+        >
+          &#x25BC;
+        </button>
+      </section>
+
+      <!-- COUNTDOWN TIMER -->
+      <div class="timer">
+        <a
+          href="https://logwork.com/countdown-ffve"
+          class="countdown-timer"
+          data-style="columns"
+          data-language="es"
+          data-date="2025-05-03 20:50"
+        >
+          Faltan
+        </a>
+      </div>
+
+      <!-- CEREMONIA -->
+      <section class="section" id="ceremonia">
+        <h2 class="section-title">Ceremonia</h2>
+        <h3 class="sub-title">Parroquia de Mater Dolorosa</h3>
+        <p class="info">🕡 7:00 pm - 8:00 pm</p>
+        <p class="info">
+          📍
+          <a href="https://maps.app.goo.gl/Yn25uKB4ogAm6an18" target="_blank">
+            C. Caracas 300, Cuauhtémoc Sur, 21200 Mexicali, B.C.
+          </a>
+        </p>
+        <!-- Optional embed map or image -->
+        <div class="map-container">
+          <iframe
+            src="https://maps-api-ssl.google.com/maps?hl=es&ll=32.661521,-115.444996&output=embed&q=C.+Caracas+300,+Cuauht%C3%A9moc+Sur,+21200+Mexicali,+B.C.,+M%C3%A9xico+(Parroquia+de+Mater+Dolorosa)&z=17"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- RECEPCION -->
+      <section class="section" id="recepcion">
+        <h2 class="section-title">Recepción</h2>
+        <h3 class="sub-title">Jardin de eventos Quinta Real</h3>
+        <p class="info">🕡 8:30 pm - 1:30 am</p>
+        <p class="info">
+          📍
+          <a href="https://maps.app.goo.gl/GLLorNMyi9UxcjFn7" target="_blank">
+            Carr. Aeropuerto km 8.5, Fraccionamiento Saturno, 21600 Mexicali,
+            B.C.
+          </a>
+        </p>
+        <div class="map-container">
+          <iframe
+            src="https://maps-api-ssl.google.com/maps?hl=es&ll=32.653099,-115.364666&output=embed&q=Carr.+Aeropuerto+km+8.5,+Fraccionamiento+Saturno,+21600+Mexicali,+B.C.,+M%C3%A9xico+(Jardin+De+Eventos+Quinta+Real)&z=17"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- GIFTS / REGALOS SECTION -->
+      <section class="section" id="regalos">
+        <h2 class="section-title">Regalos</h2>
+        <p class="info">
+          En este día tan especial agradeceríamos tu regalo en efectivo,
+          pudiendo realizar dicha aportación en la caja con sobres disponible el
+          día del evento.
+        </p>
+      </section>
+
+      <!-- CODIGO DE VESTIMENTA -->
+      <section class="section" id="vestimenta">
+        <h2 class="section-title">Código de Vestimenta</h2>
+        <h3 class="sub-title">Vestimenta formal</h3>
+        <p class="info">Elegante, por favor</p>
+      </section>
+
+      <!-- HOSPEDAJE -->
+      <section class="section" id="hospedaje">
+        <h1 class="section-title">¿Buscas dónde hospedarte?</h1>
+        <p class="info">
+          Consulta las opciones que recomendamos, cercanas al evento.
+        </p>
+        <button class="primary-btn">Opciones de hospedaje</button>
+      </section>
+
+      <!-- CONFIRMAR ASISTENCIA -->
+      <section class="section" id="confirmar">
+        <h2 class="section-title">¡Confirma tu asistencia!</h2>
+        <p class="info">
+          Por favor llena el siguiente formulario para confirmar asistencia:
+        </p>
+        <p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdqo4CssYSVamgbHNVXaYSNsxFsrwNel1SxeX5b_WZdoq7Caw/viewform"
+            target="_blank"
+            class="primary-link"
+          >
+            Formulario de confirmación
+          </a>
+        </p>
+      </section>
+
+      <!-- MAPA -->
+      <section class="section" id="mapa">
+        <h2 class="section-title">Mapa</h2>
+        <p class="info">
+          Te compartimos las ubicaciones de la ceremonia, recepción y el hotel
+          (señaladas en morado/guinda).
+        </p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/d/embed?authuser=0&mid=1ESYjWRxYkCA6Le7KxUHeU2ob3NCU5F0"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="section" id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <div class="flex">
+          <div class="contact-card">
+            <img
+              src="https://lh5.googleusercontent.com/l8olOlvzgT5mqSs7BVkCSuNnwzx_WUrmj8wuf9qiwVKwv6JgOoYaoexBvt7vBF7lQHt-LX710-V7d1uHV4vmFUAje4BLo2jqqDl9uzwfiYNo55n9Omql-q-lRTlohHq86g=w1280"
+              alt="WhatsApp Jessica"
+            />
+            <h3>Jessica</h3>
+            <p>
+              <a href="https://wa.me/526531074538" target="_blank"
+                >(+52) 653-107-4538</a
+              >
+            </p>
+          </div>
+          <div class="contact-card">
+            <img
+              src="https://lh4.googleusercontent.com/K7f2f49sd-0oY8aBWfJZCWAc8b9OOms9BgAsqTqoKbydzIMr5ypCxIjbeE2izHusrwgvfWdKc32Aoa65RFM8_3LvDDXJ90U4PXoZNR--PbKXvWJERN5VUMgEVbgLkGOA9g=w1280"
+              alt="WhatsApp Erick"
+            />
+            <h3>Erick</h3>
+            <p>
+              <a href="https://wa.me/526862124736" target="_blank"
+                >(+52) 686-212-4736</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>¡Gracias por acompañarnos! &copy; 2025 Jessica y Erick</p>
+    </footer>
+
+    <!-- Link to external JavaScript files -->
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
